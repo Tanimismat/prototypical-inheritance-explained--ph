@@ -1,3 +1,5 @@
+// prototype
+// parent class
 class TeamMember{
     name;
     designation = "Support web dev";
@@ -8,11 +10,17 @@ class TeamMember{
     }
 }
 
+// inheriting the properties of TeamMember to Support object using extends keyword
+// extend keyword is used to create a child class of the parent class
+// child class
 class Support extends TeamMember {
     startSession() {
         console.log(this.name, "start session");
     }
 }
+
+// using super keyword to call the constructor of its parent class
+// child class
 class StudentCare extends TeamMember{
     groupSupportTime;
     constructor(name, address, time) {
@@ -22,7 +30,8 @@ class StudentCare extends TeamMember{
     buildARoutine() {
         console.log(this.name, "Build a routine");
     }
-}
+} 
+
 class NeptuneDev {
     name;
     designation = "Support web dev";
