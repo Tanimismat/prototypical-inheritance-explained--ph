@@ -4,6 +4,7 @@ class TeamMember{
     name;
     designation = "Support web dev";
     address = "BD";
+    // using constructor keyword to set the value of this object to create another
     constructor(name, address) {
         this.name = name;
         this.address = address;
